@@ -1,31 +1,23 @@
 
 function runProgram(input) {
     input = input.trim().split("\n");
- let test = +input[0];
- let line = 1;
- for(i=0;i<test;i++){
-     let [N,target] = input[line++].trim().split(" ").map(Number)
- let arr = input[line++].trim().split(" ").map(Number)
-let res = -1;
-
- for(a=0;a<arr.length;a++){
-     if(arr[a]== target){
-       res = a
-     }
- }
-
- if(res == -1){
-     console.log("Not Found")
- }else{
-    console.log(res)
- }
- }
+let [size,query] = input[0].trim().split(" ").map(Number);
+let arr = input[1].trim().split(" ").map(Number);
+let line = 2;
+for(i=0;i<query;i++){
+    let [left,right,value] =  input[line++].trim().split(" ").map(Number);
+    //console.log(size,query,arr,left,right,value)
+    let count = 0;
+   
+}
  
 } 
    if (process.env.USERNAME === 'haris') {
-     runProgram(`1
-     7 40
-     10 3 40 20 80 70 90`)
+     runProgram(`6 2
+     1 5 3 2 3 2 
+     3 6 2
+     4 4 2
+     `)
     } else {
      process.stdin.resume();
      process.stdin.setEncoding("ascii");
@@ -44,6 +36,4 @@ let res = -1;
        process.exit(0);
      });
    }
-   
-
    

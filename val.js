@@ -1,23 +1,34 @@
 
 function runProgram(input) {
     input = input.trim().split("\n");
-let [size,query] = input[0].trim().split(" ").map(Number);
-let arr = input[1].trim().split(" ").map(Number);
-let line = 2;
-for(i=0;i<query;i++){
-    let [left,right,value] =  input[line++].trim().split(" ").map(Number);
-    //console.log(size,query,arr,left,right,value)
-    let count = 0;
-   
+let test = +input[0];
+let line = 1;
+let arr = [];
+for(i=0;i<test;i++){
+  let val = +input[line++];
+  arr.push(val)
+}
+
+
+let maximum = 0;
+let res = [];
+for(i=0;i<arr.length;i++){
+if(arr[i]>maximum){
+  maximum = arr[i]
+  
+}
+res.push(maximum)
+}
+  
+  console.log(res[res.length-2])
 }
  
-} 
+
    if (process.env.USERNAME === 'haris') {
-     runProgram(`6 2
-     1 5 3 2 3 2 
-     3 6 2
-     4 4 2
-     `)
+     runProgram(`3
+     10
+     20
+     30`)
     } else {
      process.stdin.resume();
      process.stdin.setEncoding("ascii");

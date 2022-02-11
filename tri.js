@@ -1,18 +1,32 @@
+function tribonnaci(N){
+    if(N==0){
+    return 0
+    }
+
+    if(N==1 || N==2){
+        return 1
+    }else{
+        return tribonnaci(N-1)+tribonnaci(N-2)+ tribonnaci(N-3)
+    }
+}
+
 
 function runProgram(input) {
     input = input.trim().split("\n");
-let size = +input[0];
-let gas = input[1].trim().split(" ").map(Number);
-let cost = input[2].trim().split(" ").map(Number);
+let test = +input[0];
+let line = 1;
+for(i=0;i<test;i++){
+    let N = +input[line++]
+    console.log(tribonnaci(N))
 
+}
 
 }
  
 
    if (process.env.USERNAME === 'haris') {
-     runProgram(`5
-     1 2 3 4 5
-     3 4 5 1 2`)
+     runProgram(`1
+     4`)
     } else {
      process.stdin.resume();
      process.stdin.setEncoding("ascii");

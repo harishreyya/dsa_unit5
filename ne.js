@@ -1,7 +1,9 @@
 
 function runProgram(input) {
    
-    
+    input  = input.trim().split("\n");
+    let test  = +input[0];
+    let 
 
     
 }

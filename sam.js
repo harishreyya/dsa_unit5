@@ -1,30 +1,16 @@
 
 function runProgram(input) {
    
-    input  = input.trim().split("\n");
-    let test  = +input[0];
-    let line = 1;
-    for(i=0;i<test;i++){
-        let size = +input[line++];
-        let arr = input[line++].trim().split(" ").map(Number);
-        for(i=0;i<arr.length;i++){
-    arr[i]+= arr[i]
-  //  console.log(arr[i])
-  
-        }
-       console.log(size,arr) 
-    }
-
+    input = input.trim().split("\n");
+    let [ap1_c,or1_c,ap1_s,or1_s,ape_s,or_c] = input[0].trim().split(" ").map(Number);
+    //console.log(ap1_c,or1_c,ap1_s,or1_s,ape_s,or_c)
+console.log((ap1_c + ap1_s + ap1_c) - ape_s  ,  (or1_c+or1_s+or1_c) - or_c)
     
 }
  
 
    if (process.env.USERNAME === 'haris') {
-     runProgram(`2
-     5
-     2 3 5 4 7
-     3
-     2 4 5`)
+     runProgram(`10 20 20 10 15 44`)
     } else {
      process.stdin.resume();
      process.stdin.setEncoding("ascii");

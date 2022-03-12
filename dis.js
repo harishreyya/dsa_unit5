@@ -3,13 +3,16 @@ function runProgram(input) {
    
     input = input.trim().split("");
     let count = 1;
-    let res = ""
+    let res = "";
+    let arr = "";
     for(i=0;i<input.length;i++){
-        if(input[i]!=="a" ||input[i]!== "e" ||input[i]!=="i" ||input[i]!== "o" ||input[i]!== "u" ){
+        if(input[i]==="a" ||input[i]=== "e" ||input[i]==="i" ||input[i]=== "o" ||input[i]=== "u" ){
            res+=input[i]
+    }else{
+        arr+=input[i]
     }
 }
-    console.log(res)
+    console.log(arr)
 }
  
 

@@ -11,7 +11,7 @@ function runProgram(input) {
         input[j] = input[j+1]
         input[j+1] = input[j]
         }
-        }  }  console.log(input) 
+        } console.log(input)  }  
     
 
     

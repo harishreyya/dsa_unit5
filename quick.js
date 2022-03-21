@@ -176,3 +176,10 @@
 // pritname = function(name){
 //   console.log("hey",name)
 // }
+
+// let ar = [1,2,3,4,5,6]
+// let sum = "";
+// for(let i=0;i<ar.length;i++){
+//     sum = sum + ar[i]
+// }
+// console.log(sum)

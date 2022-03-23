@@ -1,47 +1,35 @@
-function runProgram(input) {
-    input = input.trim().split("\n")
-    let Str = input[0].trim().split("")
- 
-   MasaiPalindrome(Str)
-}
-function MasaiPalindrome(Str) {
-   let maxi_length = 1, start = 0;
-  
-   for(let i = 0; i < Str.length; i++) {
-       for(let j = i; j < Str.length; j++) {
-                let flag = 1;
-      
-                for (let k = 0; k < (j - i + 1) / 2; k++)
-                    if (Str[i + k] != Str[j - k])
-                        flag = 0;
-      
-                //....... Palindrome
-            if (flag!=0 && (j - i + 1) > maxi_length) {
-                    start = i;
-                    maxi_length = j - i + 1;
-       }
-       
-   }
-}
-             console.log(maxi_length)
-       }
-    if (process.env.USERNAME === "haris") {
-      runProgram(`thisracecarisgood`);
-    } else {
-      process.stdin.resume();
-      process.stdin.setEncoding("ascii");
-      let read = "";
-      process.stdin.on("data", function (input) {
-        read += input;
-      });
-      process.stdin.on("end", function () {
-        read = read.replace(/\n$/, "");
-        read = read.replace(/\n$/, "");
-        runProgram(read);
-      });
-      process.on("SIGINT", function () {
-        read = read.replace(/\n$/, "");
-        runProgram(read);
-        process.exit(0);
-      });
+let strArr= str.split(' ')
+let specChar = strArr[0]
+let charStr = strArr[1].split('')
+
+let arr = specChar.split('')
+let letters = /^[A-Za-z]+$/
+let i = 0
+while(i< arr.length){
+    if(arr[i] == '+'){
+        if(!charStr[0].match(letters)) return "false"
+       charStr = charStr.slice(1,charStr.length)
     }
+    else if(arr[i] == '*'){
+        let curr = charStr[0]
+        let j = 1, k = 0
+        if(arr[i+1] != undefined && arr[i+1] == '{'){
+            k = arr[i+2]
+            i = i+4
+        }else{
+            k = 3
+            i++
+        }
+        
+        while(j < k){
+          charStr = charStr.slice(1,charStr.length)
+          if(charStr[0] != curr) return "false"
+          j++
+        }
+        charStr = charStr.slice(1,charStr.length)
+        continue
+    }
+    i++ 
+  }
+  if(charStr.length != 0) return 'false'
+   return "true" 

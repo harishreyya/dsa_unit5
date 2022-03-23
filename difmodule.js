@@ -1,38 +1,43 @@
+function Wildcards(str) { 
 
-function runProgram(input) {
-   input = input.trim().split("\n");
-   let test = +input[0];
-   let line = 1;
-   for(i=0;i<test;i++){
-       let [A,B,C] = input[line++].trim().split(" ").map(Number);
-
-       console.log(([A % C] - [B % C] + C)%C)
-   }
-    
-
-    
-}
+  let strArr = str.split(' ');
+  let specChar = strArr[0];
+  let charStr = strArr[1].split('');
  
-
-   if (process.env.USERNAME === 'haris') {
-     runProgram(`1
-     25 29 31`)
-    } else {
-     process.stdin.resume();
-     process.stdin.setEncoding("ascii");
-     let read = "";
-     process.stdin.on("data", function (input) {
-       read += input;
-     });
-     process.stdin.on("end", function () {
-       read = read.replace(/\n$/, "");
-       read = read.replace(/\n$/, "");
-       runProgram(read);
-     });
-     process.on("SIGINT", function () {
-       read = read.replace(/\n$/, "");
-       runProgram(read);
-       process.exit(0);
-     });
-   }
-   
+  let arr = specChar.split('');
+  let letters = /^[A-Za-z]+$/
+  let i = 0
+ 
+  while(i<arr.length){
+    if(arr[i]=="+"){
+      if(!charStr[0].match(letters))return "false"
+      charStr = charStr.slice(1,charStr.length)
+    }else if(arr[i]=='*'){
+      let curr = charStr[0];
+      let j = 1, k = 0
+      if(arr[i+1]!=undefined && arr[i+1]=='{'){
+        k=arr[i+2]
+        i=i+4
+      }else{
+        k=3
+        i++
+      }
+      while(j<k){
+        charStr = charStr.slice(1,charStr.length)
+        if(charStr[0]!=curr)return "false"
+        j++
+      }
+      charStr = charStr.slice(1,charStr.length)
+      continue
+ 
+    }
+    i++
+ 
+  }
+  if(charStr.length!=0)return 'false'
+  return "true"
+ 
+ }
+    
+ // keep this function call here 
+ console.log(Wildcards(readline()));

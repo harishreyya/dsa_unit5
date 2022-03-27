@@ -83,3 +83,26 @@
 /*javascript never waits i takes it and wait till time expires and prints it*/
 
 //------------------------------------------------------------------------------
+
+function foo1(){
+    return {
+        bar:'hello'
+    };
+}
+function foo2(){
+    return 
+    {
+        bar:"hello"
+    };
+}
+function foo3(){
+    return {
+        bar:"hello"
+    };
+}
+foo1()
+foo2()
+foo3()
+// console.log(foo1())
+// console.log(foo2())
+// console.log(foo3())

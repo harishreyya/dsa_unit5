@@ -119,5 +119,11 @@
 // }
 
 
-//lets just commit
+// let b = 0;
+
+// {
+//   console.log(a)
+// }
+//let and const are hoisted but cannot be accessed in temporal dead zone
+
 

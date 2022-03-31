@@ -127,3 +127,57 @@
 //let and const are hoisted but cannot be accessed in temporal dead zone
 
 
+// let arr = [1,3,4,6,7,8]
+
+// arr.filter(()=>{
+  
+// // // })
+// // // console.log(arr)
+
+// let str = "Fhytai"
+// let res = ""
+// for(i=0;i<str.length;i++){
+//   if(str[i]=="a" || str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u"){
+//     res+=str[i].toUpperCase()
+//   }else{
+// res+=str[i]
+//   }
+// }
+// console.log(res)
+
+// let arr = [1,3,4,6,7,8,2,5]
+
+// let maximum = -Infinity
+// for(i=0;i<arr.length;i++){
+//   if(maximum<arr[i]){
+//     maximum=arr[i]
+//   }
+// }
+// console.log(maximum)
+
+// const userprofue = {
+//   user:user,
+//   profile:profile,
+
+// }
+
+async function getUsers(){
+  let doc = await Promise.all(getUser(),getProfile(),getPosts());
+  // let user = doc[0];
+  // let profile = doc[1];
+  // let p = doc[2];
+const userprofile = {
+  user:doc[0],
+  profile:doc[1],
+  p:doc[2]
+}
+  // const userprofile = {
+  //   user:user,
+  //   profile:profile,
+  //   posts:p,
+
+  // };
+let  {user,profile,posts} =  userprofile
+
+  return userprofile;
+}

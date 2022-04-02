@@ -159,25 +159,27 @@
 //   user:user,
 //   profile:profile,
 
+// // }
+
+// async function getUsers(){
+//   let doc = await Promise.all(getUser(),getProfile(),getPosts());
+//   // let user = doc[0];
+//   // let profile = doc[1];
+//   // let p = doc[2];
+// const userprofile = {
+//   user:doc[0],
+//   profile:doc[1],
+//   p:doc[2]
+// }
+//   // const userprofile = {
+//   //   user:user,
+//   //   profile:profile,
+//   //   posts:p,
+
+//   // };
+// let  {user,profile,posts} =  userprofile
+
+//   return userprofile;
 // }
 
-async function getUsers(){
-  let doc = await Promise.all(getUser(),getProfile(),getPosts());
-  // let user = doc[0];
-  // let profile = doc[1];
-  // let p = doc[2];
-const userprofile = {
-  user:doc[0],
-  profile:doc[1],
-  p:doc[2]
-}
-  // const userprofile = {
-  //   user:user,
-  //   profile:profile,
-  //   posts:p,
-
-  // };
-let  {user,profile,posts} =  userprofile
-
-  return userprofile;
-}
+//my name is intu

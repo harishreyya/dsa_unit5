@@ -183,3 +183,11 @@
 // }
 
 //my name is intu
+// console.log(typeof(42.1))
+// var a = ["a","b","c","d"]
+// a.pop()
+// console.log(a.pop())
+
+const a = {x:1}
+const b = {x:1}
+console.log(a!=b)

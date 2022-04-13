@@ -193,3 +193,12 @@
 // console.log(a!=b)
 
 //scared about interview
+// var x= 45;
+
+// // // console.log(typeof(x));
+// // var name= "antra"
+// // console.log(typeof(name));
+// var y=true;
+// console.log(typeof(true));
+
+

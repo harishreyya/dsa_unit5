@@ -225,3 +225,6 @@
 // var y="karnataka"
 // console.log(y);
 
+
+//SEARCH BAR DOING 
+

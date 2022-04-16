@@ -226,5 +226,14 @@
 // console.log(y);
 
 
-//SEARCH BAR DOING 
+//SEARCHing
+
+
+
+//console.log(a);
+//  a = "harish"
+//  console.log(a);
+//  b ="antara"
+//  console.log(b);
+
 

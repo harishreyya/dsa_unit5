@@ -207,33 +207,4 @@
 // console.log(name);
 // var gender="female"
 // console.log(gender);
- 
-// var height="4.8inches"
-// console.log(height);
-
-// var non_veg="meat"
-// console.log(non_veg);
-// 2nd Floor, 91springboard, Koramangala
-// Bangalore
-// Karnataka
-// var location="2nd Floor, 91springboard, koramangala"
-// console.log(location);
-
-// var x="bangalore"
-// console.log(x);
-
-// var y="karnataka"
-// console.log(y);
-
-
-//SEARCHing
-
-
-
-//console.log(a);
-//  a = "harish"
-//  console.log(a);
-//  b ="antara"
-//  console.log(b);
-
 

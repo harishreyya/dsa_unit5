@@ -208,4 +208,43 @@
 // var gender="female"
 // console.log(gender);
 
+//   profile:doc[1],
+//   p:doc[2]
+// }
+//   // const userprofile = {
+//   //   user:user,
+//   //   profile:profile,
+//   //   posts:p,
+
+//   // };
+// let  {user,profile,posts} =  userprofile
+
+//   return userprofile;
+// }
+
+//my name is intu
+// console.log(typeof(42.1))
+// var a = ["a","b","c","d"]
+// a.pop()
+// console.log(a.pop())
+
+// const a = {x:1}
+// const b = {x:1}
+// console.log(a!=b)
+
+//scared about interview
+// var x= 45;
+
+// // // console.log(typeof(x));
+// // var name= "antra"
+// // console.log(typeof(name));
+// var y=true;
+// console.log(typeof(true));
+// var name="antara"
+// console.log(name);
+
+// name="chomtit"
+// console.log(name);
+// var gender="female"
+// console.log(gender);
 

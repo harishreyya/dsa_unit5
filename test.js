@@ -248,3 +248,10 @@
 // var gender="female"
 // console.log(gender);
 
+// var x = 42;
+
+// console.log(x+1)
+
+//  var name = "42";
+
+//  console.log(name+1)

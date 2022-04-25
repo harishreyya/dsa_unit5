@@ -381,3 +381,6 @@
 
 // careers@cloudbloom.io
 
+https://blog.isquaredsoftware.com/2021/01/context-redux-differences/
+
+why so serious?

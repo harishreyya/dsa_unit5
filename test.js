@@ -381,6 +381,10 @@
 
 // careers@cloudbloom.io
 
-https://blog.isquaredsoftware.com/2021/01/context-redux-differences/
+//https://blog.isquaredsoftware.com/2021/01/context-redux-differences/
 
-why so serious?
+// let a = 2;
+// let b = 3;
+// let c = 1;
+
+// console.log(a && b && c)

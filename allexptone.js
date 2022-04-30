@@ -15,12 +15,9 @@ if(obj[arr[a]]===undefined){
     obj[arr[a]]+=1;
 }
 
-
-
    }
 
    for(let key in obj){
-    //    console.log(obj[key])
     if(obj[key]==1){
         console.log(key)
     }

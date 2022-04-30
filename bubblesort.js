@@ -1,9 +1,7 @@
 
 function runProgram(input) {
    input = input.trim().split(" ").map(Number);
- 
  let  size = input.length
-	
 	for ( i=0;i<size - 1;i++){
 	    for ( j=0;j<size - i - 1;j++){
 		if (input[j] > input[j + 1]){ 

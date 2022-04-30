@@ -1,4 +1,4 @@
-function findDuplicates(arr,size){
+function findDuplicates(arr){
     let s1 = 0;
     for(let i=0;i<arr.length;i++){
         s1+=arr[i]

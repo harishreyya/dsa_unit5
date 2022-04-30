@@ -21,15 +21,6 @@ function runProgram(input) {
 console.log(findDuplicates(arr))
 
     }
-//     function findDuplicates(int[] array)
-// 	S1 = 0
-// 	for (int i=0;i<array.length;i++) 
-// 		S1 += array[i]
-// 	n = array.length - 1
-// 	S2 = [n * (n + 1)]/2
-// 	int ans = S1 - S2
-// 	return ans
-
     
 }
  

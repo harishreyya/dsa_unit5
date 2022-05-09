@@ -388,5 +388,4 @@
 // let c = 1;
 
 // console.log(a && b && c)
-
-//General Medicine	Monday & Thursday	09:00 am to 01:00 pm	Dr. Sandhya S
+//everything which not in the function is in the global execution

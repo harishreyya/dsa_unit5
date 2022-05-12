@@ -297,4 +297,8 @@
 // let c = 1;
 
 // console.log(a && b && c)
+
+
 //everything which not in the function is in the global execution
+
+// ------------------------------------------------------------------------

@@ -1,34 +1,25 @@
 
 function runProgram(input) {
    input = input.trim().split("\n");
-   let test = +input[0];
-   let line = 1;
-   for(i=0;i<test;i++){
-       let num = +input[line++]
-       let arr = [0,1,2,3,4,5,6,7,8,9]
+   let arr = input[0].trim().split(" ").map(Number);
 
-       for(a=0;a<arr.length;a++){
-           for(b=0;b<arr.length;b++){
-             
-               if(arr[a]**4 + arr[b]**4 == num){
-                   console.log("1")
-                   break;
-               }else{
-                   console.log("0")
-               }
-           }
+   let maximum = Infinity
+   let ans;
+
+   for(i=0;i<arr.length;i++){
+       if(arr[i]<maximum){
+           maximum = arr[i]
+           ans = i
        }
    }
     
-
+console.log(ans)
     
 }
  
 
    if (process.env.USERNAME === 'haris') {
-     runProgram(`2
-     55
-     97`)
+     runProgram(`3 4 5 0 1 2`)
     } else {
      process.stdin.resume();
      process.stdin.setEncoding("ascii");

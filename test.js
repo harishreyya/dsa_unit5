@@ -329,3 +329,23 @@
 
 //   return unique;
 // }
+
+// function add (a) {
+//   return function (b) {
+//     return a + b;
+//   }
+  
+// }
+// console.log(add(3))
+
+// var a = "42";
+
+// var b = a * 2;
+
+// console.log(b)//84
+
+// var a = "42";
+
+// var b = a + 2;
+
+// console.log(b)//422

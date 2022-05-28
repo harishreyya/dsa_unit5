@@ -349,3 +349,26 @@
 // var b = a + 2;
 
 // console.log(b)//422
+
+
+// console.log("1")
+
+// setTimeout
+
+// var c;
+// var a = 10 
+// outer();
+// function outer(){
+//   var a = 20;
+//   b = 30
+//   console.log(a);
+//   console.log(c)
+// }
+
+// console.log(b);
+// console.log(d);
+// const arr = [1,2,3,4]
+
+
+
+

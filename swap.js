@@ -1,6 +1,8 @@
 function runProgram(input) {
    let arr = input.trim().split(" ").map(Number);
 //    console.log(arr)
+//8 7 4 6 9 3 2 1   input
+   //8 1 4 3 9 6 2 7   output
 let odd = [];
 let even = [];
 for(i=0;i<arr.length;i++){
@@ -30,8 +32,7 @@ console.log(res.join(" "))
             }
             console.log(res.join(" "))
 }
-  }  //8 7 4 6 9 3 2 1
-   //8 1 4 3 9 6 2 7
+  }  
    if (process.env.USERNAME === 'haris') {
      runProgram(`8 7 4 6 9 3 2 1`);
    } else {

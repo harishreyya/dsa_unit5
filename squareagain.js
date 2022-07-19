@@ -1,10 +1,7 @@
 function runProgram(input) {
     let n = input.trim().split("")
-    // console.log(n)
-    for(i=0;i<n;i++){
-        
-    }
-   }
+    // console.log(n);git 
+}
    
    if (process.env.USERNAME === 'haris') {
      runProgram(`4`);

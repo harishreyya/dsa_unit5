@@ -1,6 +1,6 @@
 function runProgram(input) {
     let n = input.trim().split("")
-    // console.log(n);git 
+    
 }
    
    if (process.env.USERNAME === 'haris') {

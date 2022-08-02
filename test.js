@@ -1,8 +1,8 @@
 
 
-// var x = 7
-// // console.log(x)
-
+//  var x = 7
+//  console.log(x)
+ 
 // function getname(){
 //     console.log("aur bhai hoisting")
     
@@ -28,14 +28,14 @@
 //   }
 //   var z = x()
 
-//   console.log(z)
-// z()
+// //   console.log(z)
+// // z()
 
-/*closure is functions along with its lexical scope bundles together */
+// /*closure is functions along with its lexical scope bundles together */
 
-//-----------------------------------------------------------------------------
+// //-----------------------------------------------------------------------------
 
-//set timeout + closures
+// //set timeout + closures
 
 // function x(){
 //    // using let will give 1 2 3 4 5 in 1 sec of interval due to blockscope of let
@@ -103,9 +103,9 @@
 // foo1()
 // foo2()
 // foo3()
-// // console.log(foo1())
-// // console.log(foo2())
-// // console.log(foo3())
+// console.log(foo1())
+// console.log(foo2())
+// console.log(foo3())
 
 
 // ----------------------------------------------------------------------------------

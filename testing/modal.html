@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal-container{
+            background-color: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
+            top:0;
+            left:0;
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+         align-items: center;
+         justify-content: center;
+        }
+        .modal-container.show{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal{
+         background-color: white;
+         width: 679px;
+         height: 500px;
+         max-width: 100%;
+         border-radius: 16px;
+         padding: 64px 64px;
+        }
+        /* -- */
+        .modal-container2{
+            background-color: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
+            top:0;
+            left:0;
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+         align-items: center;
+         justify-content: center;
+        }
+        .modal-container2.show2{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal2{
+         background-color: white;
+         width: 679px;
+         height: 500px;
+         max-width: 100%;
+         border-radius: 16px;
+         padding: 64px 64px;
+        }
+    </style>
+</head>
+<body>
+    <button id="open">Confirm settings</button>
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <h3>Confirm Auto Reinvest Preferences</h3>
+            <p>Your preferences for Auto Reinvest are as follows:</p>
+            <button id="close">cancel</button>
+            <button>confirm</button>
+            <!-- <button id="open2">confirm</button> -->
+        </div>
+    </div>
+    <!-- <div class="modal-container2" id="modal-container2">
+        <div class="modal2">
+            <h3>Confirm Auto 2</h3>
+            <p>Your preferences for Auto 2</p>
+            <button id="close2">cancel</button>
+            <button >confirm</button>
+        </div>
+    </div> -->
+</body>
+<script>
+    const Open = document.getElementById('open')
+    const modal_container = document.getElementById('modal-container');
+    const Close = document.getElementById("close");
+Open.addEventListener('click',()=>{
+    modal_container.classList.add('show')
+})
+Close.addEventListener('click',()=>{
+    modal_container.classList.remove('show')
+})
+// const Open2 = document.getElementById('open2')
+// const modal_container2 = document.getElementById('modal-container2');
+// const Close2 = document.getElementById("close2");
+// Open2.addEventListener('click',()=>{
+//     modal_container.classList.add('show2')
+// })
+// Close2.addEventListener('click',()=>{
+//     modal_container.classList.remove('show2')
+// })
+</script>
+</html>

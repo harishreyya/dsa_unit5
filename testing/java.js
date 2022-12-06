@@ -5,7 +5,7 @@
 // print("\n");
 // // }
 
-// const a = "td";
-// const b = !a;
+const a = "td";
+const b = !a;
 
-// console.log(b)
+console.log(b)

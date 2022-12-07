@@ -10,4 +10,16 @@
 
 // console.log(b)
 
-console.log("3"-"2");
+// console.log("3"-"2");
+
+const obj = {
+    name: "ss",
+    getName() {
+    console.log(this.name);
+    }
+    };
+    var name="ssg";
+    const getName=obj.getName;
+    getName();
+
+ 

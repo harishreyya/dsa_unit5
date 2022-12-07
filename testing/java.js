@@ -12,14 +12,23 @@
 
 // console.log("3"-"2");
 
-const obj = {
-    name: "ss",
-    getName() {
-    console.log(this.name);
-    }
-    };
-    var name="ssg";
-    const getName=obj.getName;
-    getName();
+// const obj = {
+//     name: "ss",
+//     getName() {
+//     console.log(this.name);
+//     }
+//     };
+//     var name="ssg";
+//     const getName=obj.getName;
+//     getName();
 
- 
+// let obj={
+//     foo: "foo",
+//     bar: "bar",
+//     zoo: false
+//     }
+    
+//     let one= obj?.zoo ?? obj?.foo
+//     let two= obj.zoo || obj.foo
+    
+//     console.table([one,two])

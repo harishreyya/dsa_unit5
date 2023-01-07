@@ -1,0 +1,331 @@
+main{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emojif;
+}
+
+main .masai-statics{
+display: grid;
+grid-template-columns: 2fr 2fr;
+grid-gap: 30px;
+text-align: center;
+color: white;
+}
+
+.placement-rate{
+    width: 100%;
+    margin: auto;
+    background-color: #007aff;
+    height: 250px;
+    border-radius: 16px;
+}
+.placement-rate h2{
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.placement-rate .sunshine{
+    width: 42px;
+    margin-left: -458px;
+    margin-bottom: -60px;
+}
+
+.placement-rate .underline{
+    margin-left: -281px;
+}
+
+.placement-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.placement-bottom div:nth-child(1){
+background-color:rgba(66, 153, 225, 0.6); 
+width: 80%;
+border-radius: 16px;
+display: flex;
+align-items: center;
+height: 250px;
+font-size: 30px;
+justify-content: center;
+}
+
+.placement-bottom div:nth-child(2){
+ background-color:#70cfa0;
+ width: 80%;
+ height: 250px;
+ border-radius: 16px;
+ display: flex;
+align-items: center;
+font-size: 30px;
+justify-content: center;
+}
+
+.right-statics{
+    background-color: rgba(110,113,204);
+    border-radius: 16px;
+}
+.right-statics h2{
+    font-size: 38px;
+}
+
+.right-statics button{
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.yellow-color{
+    color:  rgba(255,219,102);
+}
+
+.skill-cards .skill-heading{
+text-align: center;
+}
+
+.skill-heading h2{
+    font-size: 38px;
+    line-height: 16px;
+}
+
+.skill-heading p{
+    font-weight: 500;
+}
+
+.skill-cards .cards-section{
+display: flex;
+width: 70%;
+justify-content: space-between;
+margin: auto;
+}
+.skill-cards .cards-section .left-card .top-color{
+    width: 100%;
+height: 100px;
+background-color: rgba(110,113,204);
+}
+.skill-cards .cards-section .right-card .top-color{
+    width: 100%;
+height: 100px;
+background-color: #70cfa0;
+}
+
+.left-card,.right-card{
+width: 400px;
+border: 1px solid rgb(231, 230, 230);
+border-radius: 16px;
+overflow: hidden;
+text-align: center;
+}
+
+.left-card .dp, .right-card .dp{
+    display: flex;
+    justify-content: center;
+}
+
+.left-card .dp img, .right-card .dp img{
+ width: 210px;
+ border-radius: 50%;
+ border: 5px solid white;
+ margin-top: -50px;
+}
+
+.left-card .underline, .right-card .underline{
+    margin-top: -39px;
+}
+.left-card .practice, .right-card .practice{
+    line-height: 0px;
+}
+.left-card .requirments, .right-card .practice{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-card .requirments p, .right-card .requirments p{
+    font-size: 12px;
+   font-weight: 500;
+   line-height: 0px;
+}
+.left-card .requirments div,.right-card .requirments div{
+    padding: 0px 10px;
+    background-color: #F2F6FF;
+   color:rgba(52,112,228);
+   border-radius: 15px;
+}
+.left-card .icons-para-wrapper, .right-card .icons-para-wrapper{
+    display: flex;
+line-height: 10px;
+}
+.left-card .icons-para-wrapper img, .right-card .icons-para-wrapper img{
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 10px;
+   
+}
+.left-card .icons-para-wrapper p, .right-card .icons-para-wrapper p{
+    font-weight: 700;
+    font-size: 16px;
+}
+.color-blue{
+   color: rgba(52,112,228);
+}
+.left-card .bottom-red, .right-card .bottom-red{
+    background-color: #E53E3E;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.scholar-preleaf{
+    background-color: rgb(251, 238, 220);
+    text-align: center;
+    border-radius: 18px;
+}
+
+.scholar-preleaf .logos img{
+    width: 250px;
+}
+.scholar-preleaf h2{
+    font-size: 35px;
+}
+.scholar-preleaf p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.color-purple{
+    color: rgba(110,113,204);
+}
+.scholar-preleaf button{
+    background: white;
+    color:#ED0331;
+    border: 1px solid #ED0331;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+} 
+
+.scholar-preleaf button:hover{
+background-color: #FEDFE5;
+}
+.scholar-preleaf .last-line{
+    color: gray;
+}
+.start-learning .btn-red-wrap{
+    display: flex;
+    justify-content: center;
+}
+.start-learning .learning-btn{
+    color: white;
+    background-color:#ED0331;
+    border: none;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.start-learning{
+    text-align: center;
+}
+.start-learning .instructors-cards{
+display: grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-gap:30px;
+}
+
+.start-learning .instructors-cards .card{
+    width: 270px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.start-learning .instructors-cards .card img{
+    width: 100%;
+}
+.start-learning .instructors-cards .ex-wrap{
+display: flex;
+justify-content: center;
+}
+
+.start-learning .instructors-cards .ex-wrap img{
+    width: 100px;
+    }
+    .student-stories{
+        text-align: center;
+    }
+ .student-stories h2{
+    font-size: 35px;
+ }   
+ .student-stories  .students-cards{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:30px;
+ }
+
+ .student-stories  .students-cards .card{
+    width: 270px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .student-stories  .students-cards .card img{
+    width: 100%;
+}
+
+.student-stories  .students-cards .student-desc{
+    margin-top:-20px ;
+ background-color: #cee9db;
+ padding-top: 20px;
+}
+
+.student-stories  .students-cards .student-desc img{
+    width: 80px;
+}
+
+.student-stories .learning-btn{
+    color: white;
+    background-color:#ED0331;
+    border: none;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.company-review{
+    text-align: center;
+}
+.company-review .company-card{
+width: 250px;
+background-color: rgb(247, 247, 255);
+border-radius: 16px;
+margin: 10px;
+padding-left: 20px;
+}
+.company-review .company-card .profile{
+display: flex;
+
+}
+.company-review .company-card .profile .dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    
+    }
+
+    .company-review .company-card .logo{
+        width: 50px;
+        }
+

@@ -3,7 +3,6 @@
 function runProgram(input) {
     input = input.trim().split("\n")
     var testcases = Number(input[0])
-    
     var line = 1;
     for(var i = 0; i < testcases; i++) {
         var N = Number(input[line++])

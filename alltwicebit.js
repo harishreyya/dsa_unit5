@@ -7,7 +7,7 @@ function runProgram(input) {
     for(var i = 0; i < testcases; i++) {
         var N = Number(input[line++])
         var arr = input[line++].trim().split(" ").map(Number)
-      // console.log(testcases,N,arr)
+      console.log(testcases,N,arr)
         
         console.log(alltwice(arr))
     }

@@ -39,3 +39,7 @@
 
 //     console.log(arr[i])
 // }
+let a = ql;
+function b(){
+    
+}

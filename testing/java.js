@@ -39,7 +39,7 @@
 
 //     console.log(arr[i])
 // }
-let a = ql;
-function b(){
-    
-}
+// let a = ql;
+// function b(){
+
+// }

@@ -34,10 +34,9 @@ var randomColor = function() {
     var b = safeColors[rand()];
     return "#"+r+g+b;
 };
-jQuery
 
 $(document).ready(function() {
-    $('#button').mouseover(function() {
+    $('#button').click(function() {
         $('div').each(function() {
             $(this).css('background',randomColor());
         });

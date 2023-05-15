@@ -4,40 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>Document</title>
     <style>
         h1 {
-            margin-left: 100px;
+            text-align: center;
         }
         button {
-            margin: 5px;
             border-radius: 10px;
             padding: 10px;
             width: 200px;
             height: 50px;
-            font-size: 16px;
-            margin-left: 100px;
-            border: 1px soli red;
         }
     </style>
 
 </head>
 <body>
-    <h1>Change the buttons text color random value</h1>
+    <h1 class="text">Change the buttons text color random value</h1>
     <button id="random">Click here to change my color</button>
     <script>
-        var btn = document.getElementById("random");
 
         function random(number) {
-            return Math.floor(Math.random() * number);
+            return Math.floor(Math.random()*number);
         }
 
-        function Change(e) {
+        $('#random').on('click',function(){
             var randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-            e.target.style.backgroundColor = randomColor;
-            console.log(e);
-        }
-        btn.addEventListener('click', Change);
+          $('.text').css('color',randomColor)
+        })
     </script>
 
 </body>

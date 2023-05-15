@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p class="text">hi whats up</p>
+    <button class="kick">change</button>
+</body>
+<script>
+    const arrayOfColorFunctions = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f']
+
+// let randomColorString = '#';
+let randomColorString = '#';
+
+function sdfgh(){
+    for (let x = 0; x < 6; x++){
+
+let index = Math.floor(Math.random() * 16)
+let value = arrayOfColorFunctions[index]
+
+randomColorString += value
+}
+}
+
+
+
+//  console.log(randomColorString)
+// let ans = randomColorString
+
+
+
+//  console.log(randomColorString)
+
+$('.kick').on('click',function(){
+    
+    
+$('.text').css('color',sdfgh(randomColorString))
+})
+
+
+</script>
+</html> -->
+
+<!-- // jQuery Colourizer
+// Kent Fenwick 2009
+// Use it when you want to add a splash of random colour to your page
+
+
+// Create the colour array
+var color_array = ["#ce521d","#ca4b89","#006b89","#3e2d7e","#61902c", "#faa31a", "#6e002a", "#4981b3",
+                   "#980069", "#2dacbf", "#ee1d25", "#9cb46f", "#9a869e", "#ee008c", "#00a895",
+                   "#7b181a", "#ffd63c", "#b46638", "#bcd634", "#f4ea00", "#32b6c0", "#e8ac1c",
+                   "#ea2d50", "#3c7022", "#0085cc", "#97C83B"];
+
+// Pick a random colour of the array
+var random_color = color_array[Math.floor(Math.random()*color_array.length)];
+
+// Choose some jQuery CSS selectors of elements whose colour you want to change
+var colour_selectors = [".manifesto li", "a.work", "#books h2", "div.work-item a", ".news-item h4 a"];
+
+// Choose some jQuery CSS selectors of elements whose background colour you want to change
+var bg_colour_selectors = ["#navigation_bar", "#navigation li"];
+
+// loop over the Colour Selectors and apply the new random color
+jQuery.each(colour_selectors, function(i,val){
+	
+	// use each val and apply the colour css property
+	$(val).css("color",random_color);
+	
+});
+
+// loop over the Background Colour Selectors and apply the new random color
+jQuery.each(bg_colour_selectors, function(i,val){
+	
+	// use each val and apply the backgroun colour css property
+	$(val).css("background-color",random_color);
+	
+}); -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div id="chooseColor" style="width:100px;height:100px;background-color:#FF0"></div>
+<button class="chnge">Click the button to get random color</button>
+</body>
+<script>
+   //The getColorCode() will give the code every time.
+   function getColorCode() {
+      var makeColorCode = '0123456789ABCDEF';
+      var code = '#';
+      for (var count = 0; count < 6; count++) {
+         code =code+ makeColorCode[Math.floor(Math.random() * 16)];
+      }
+      return code;
+   }
+   //Function call on button click.
+$('.chnge').on('click',function pickRandomColor() {
+      $("#chooseColor").css("background-color", getColorCode());
+   })
+   
+</script>

@@ -5,8 +5,6 @@ function runProgram(input) {
 }
 
 
-   
-
   if (process.env.USERNAME === "haris") {
     runProgram(`3 3 5 5 1`);
   } else {

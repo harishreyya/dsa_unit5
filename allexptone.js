@@ -6,7 +6,7 @@ function runProgram(input) {
    for(i=0;i<test;i++){
    let n = +input[line++];
    let arr = input[line++].trim().split(" ").map(Number);
-
+// ----------------
 let obj ={};
    for(a=0;a<arr.length;a++){
 if(obj[arr[a]]===undefined){

@@ -53,5 +53,5 @@ if(obj[arr[a]]===undefined){
        process.exit(0);
      });
    }
-  //----
+  
   

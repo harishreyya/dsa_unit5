@@ -8,7 +8,7 @@ let arr = input[1].trim().split(" ").map(Number);
 let first = 0;
 let last = arr.length;
 let mid = (first+last)/2
-// --------------
+// ---------------------
 
 
 
